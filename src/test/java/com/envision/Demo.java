@@ -17,6 +17,9 @@ public class Demo {
         driver.findElement(By.name("inputPassword")).sendKeys("hello123");
         driver.findElement(By.xpath("//button[@class='submit signInBtn']")).click();
         System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
+        System.out.println("Text1: "+driver.findElement(By.cssSelector("p.error")).getText());
+        System.out.println("Text2"+driver.findElement(By.cssSelector("p.error")).getText());
+
 
     }
 }
